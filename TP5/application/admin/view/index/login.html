@@ -1,0 +1,27 @@
+{include file="common/header"}
+
+<div class="login-container animated fadeInDown">
+        <form action="#" method="post">
+            <div class="loginbox bg-white">
+                <div class="loginbox-title">SIGN IN</div>
+                <div class="loginbox-textbox">
+                    <input value="admin" class="form-control" placeholder="name" name="username" type="text">
+                </div>
+                <div class="loginbox-textbox">
+                    <input class="form-control" placeholder="password" name="password" type="password">
+                </div>
+                <div class="loginbox-textbox">
+                    <input class="form-control" style="width:100px;float:left;" name="code" type="text">
+                    <img src="{:captcha_src()}" onclick="this.src='{:captcha_src()}?'+Math.random();" width="120" style="float:left; cursor:pointer;" alt="captcha" />
+                </div>
+                <div class="loginbox-submit">
+                    <input class="btn btn-primary btn-block" value="Login" type="submit">
+                </div>
+            </div>
+                <div class="logobox">
+                    <p class="text-center">ThinkPHP5.0</p>
+                </div>
+        </form>
+    </div>
+
+{include file="common/foot"}
